@@ -1,0 +1,22 @@
+scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+
+# Queries
+extend type Query {
+  category(id: ID! @eq): Category @find (model: "App\\Models\\Category")
+  categories: [Category!]! @all(model: "App\\Models\\Category")
+  #categories(name: String @where(operator: "like")): [Category!]! @paginate(defaultCount: 10) (model: "App\\Models\\Category")
+}
+
+# Mutations
+extend type Mutation {
+  createCategory(name: String!): Category! @create 
+  updateCategory(id: ID!, name: String!): Category! @update
+  deleteCategory(id: ID! @whereKey): Category! @delete
+}
+
+type Category {
+  id: ID!
+  name: String!
+  created_at: DateTime!
+  updated_at: DateTime!
+}
