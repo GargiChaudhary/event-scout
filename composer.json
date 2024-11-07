@@ -13,7 +13,6 @@
         "league/csv": "^9.18",
         "mll-lab/graphql-php-scalars": "^6.3",
         "mll-lab/laravel-graphiql": "^3.2",
-        "mll-lab/laravel-graphql-playground": "^1.1",
         "nuwave/lighthouse": "^6.45"
     },
     "require-dev": {
