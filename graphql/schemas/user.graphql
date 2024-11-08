@@ -14,7 +14,7 @@ extend type Query {
 }
 
 extend type Mutation{
-    insertUser(input: createUser! @spread): User! @guard @field(resolver: "App\\GraphQL\\Mutations\\User\\CreateUser")
+    insertUser(input: createUser! @spread): User! @field(resolver: "App\\GraphQL\\Mutations\\User\\CreateUser")
     updateUser(input: updateUser! @spread): User! @guard @field(resolver: "App\\GraphQL\\Mutations\\User\\UpdateUser")
     deleteUser(id: ID! @whereKey): User @delete(model: "App\\Models\\User")
 

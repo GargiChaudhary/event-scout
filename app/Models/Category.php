@@ -30,6 +30,7 @@ class Category extends Model
      * @var bool
      */
     public $timestamps = true; 
+    protected $dates = ['deleted_at']; 
     
     // Add relationships if any, for example, events belonging to a category:
     // public function events()
