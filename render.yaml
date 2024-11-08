@@ -20,19 +20,4 @@ services:
         value: base64:xtM5W00m3WZmkBXVGq0ua+NcU39SagrkTGpf3UuO1CI=
       - key: APP_URL
         value: https://event-scout-zov6.onrender.com 
-      - key: DB_CONNECTION
-        value: pgsql
-      - key: DB_HOST
-        value: dpg-csloirl6l47c73c8n200-a 
-      - key: DB_PORT
-        value: 5432
-      - key: DB_DATABASE
-        value: eventscout
-      - key: DB_USERNAME
-        value: gargi
-      - key: DB_PASSWORD
-        value: AlaK4eJ1f0FjHldoBBY25CMZWEGZAhuf
-      - key: SESSION_DRIVER
-        value: database
-      - key: CACHE_DRIVER
-        value: database
+      
